@@ -1,0 +1,9 @@
+{
+  "sample_id": "sample_051_a5b4a90f",
+  "subset": "environment",
+  "caption": "A winding, wet road winds through a misty mountain landscape, surrounded by steep cliffs, waterfalls, and sparse vegetation, under an overcast sky.",
+  "ground_truth_media": {
+    "source_video": "source_video.mp4",
+    "first_frame": "first_frame.png"
+  }
+}

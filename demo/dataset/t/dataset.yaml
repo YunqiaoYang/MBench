@@ -1,0 +1,22 @@
+dataset_id: mbencht
+dataset_name: MBench-T
+version: '2.0'
+description: 'MBench-V: Video Memory Benchmark for T2V long-video generation'
+path_mode: relative_to_dataset_root
+
+subsets:
+  environment: {description: Environment / spatial memory samples.}
+  human: {description: Human identity memory samples.}
+  object: {description: Object identity memory samples.}
+  causal: {description: Causal / interaction memory samples.}
+
+condition_id:
+  pattern: "text"
+
+paths:
+  sample_dir: samples/{subset}/{sample_id}
+  sample_meta: samples/{subset}/{sample_id}/sample.json
+  model_package: models/{model_id}
+  model_samples: models/{model_id}/samples.jsonl
+  output_video: models/{model_id}/outputs/{subset}/{sample_id}/{condition_id}/video.mp4
+  artifact_da3: models/{model_id}/artifacts/{subset}/{sample_id}/{condition_id}/da3/results.npz

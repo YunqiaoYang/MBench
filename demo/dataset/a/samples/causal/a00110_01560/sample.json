@@ -1,0 +1,9 @@
+{
+  "sample_id": "a00110_01560",
+  "subset": "causal",
+  "caption": "A wooden block rests on a smooth, bright blue surface, supporting a cylindrical spool wrapped in white string. Atop the spool sits a black cap with a central metal bolt. A person's hands position a metallic wrench onto the bolt, threading a thin white string through its loop. As the wrench is pulled upward, the string unwinds rapidly, causing the wrench to spin and rise vertically, demonstrating rotational motion and tension dynamics.",
+  "ground_truth_media": {
+    "source_video": "source_video.mp4",
+    "first_frame": "first_frame.png"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "sample_id": "sample_115_b7816bd8",
+  "subset": "object",
+  "caption": "A sleek, sunlit modern bedroom features a minimalist design, large bed, and expansive patio with tropical greenery, evoking calm sophistication and high-end living.",
+  "ground_truth_media": {
+    "source_video": "source_video.mp4",
+    "first_frame": "first_frame.png",
+    "reference": "reference.png"
+  },
+  "object_anchor": {
+    "center_x": 748.0,
+    "center_y": 371.0,
+    "width": 1280,
+    "height": 720,
+    "source": "spatial_subset_ranking"
+  }
+}

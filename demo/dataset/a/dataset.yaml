@@ -1,0 +1,29 @@
+dataset_id: mbencha
+dataset_name: MBench-A
+version: '1.0'
+description: 'MBench-A: World Model Action Benchmark for camera motion control'
+path_mode: relative_to_dataset_root
+
+subsets:
+  environment: {description: Environment / spatial memory samples.}
+  human: {description: Human entity identity memory samples.}
+  object: {description: Object entity identity memory samples.}
+  causal: {description: Causal / interaction memory samples.}
+
+condition_id:
+  pattern: "{action}_{length}"
+  actions: [left_then_right, right_then_left, forward_then_backward, left_360, right_360, left_720, right_720, left_1080, right_1080, static]
+  lengths:
+    10s: original 161f setting
+    25s: original 401f setting
+
+paths:
+  sample_dir: samples/{subset}/{sample_id}
+  sample_meta: samples/{subset}/{sample_id}/sample.json
+  source_video: samples/{subset}/{sample_id}/source_video.mp4
+  first_frame: samples/{subset}/{sample_id}/first_frame.png
+  reference: samples/{subset}/{sample_id}/reference.png
+  model_package: models/{model_id}
+  model_samples: models/{model_id}/samples.jsonl
+  output_video: models/{model_id}/outputs/{subset}/{sample_id}/{condition_id}/video.mp4
+  artifact_da3: models/{model_id}/artifacts/{subset}/{sample_id}/{condition_id}/da3/results.npz

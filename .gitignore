@@ -1,0 +1,75 @@
+# --- editor / agent local ---
+CLAUDE.md
+PREVIEW.md
+CODEBUDDY.md
+.codebuddy/
+.cursor/
+uploads/
+
+# --- workspace (not part of public repo) ---
+paper/
+rubbish/
+ARCHIVE/
+ARCHIVED_docs/
+reports/
+*.html
+
+# --- data & eval outputs ---
+/data/
+/runs/
+
+# --- internal maintainer docs (user-facing: README only) ---
+METRIC.md
+DATA.md
+REPORT.md
+docs/
+
+# --- examples (optional local reference; fixtures live under tests/) ---
+examples/
+
+# --- build & python cache ---
+mbench.egg-info/
+dist/
+build/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# --- logs & temp ---
+*.log
+*.tmp
+*.swp
+*~
+.DS_Store
+
+# --- assets (README uses MBench-Logo only) ---
+assets/fig_paper_teaser_dimension.png
+assets/fig_teaser_mbench_v.png
+
+# --- exp ---
+exp/
+
+# --- demo: heavy artifacts are kept locally as symlinks pointing to the
+#     full MBench-Data tree; on a public clone the user follows the cloud-drive
+#     download instructions in demo/README.md instead. We track the directory
+#     structure + JSON metadata + run_demo.sh + README,
+#     and ignore videos, DA3 npz, ground-truth media, and run outputs. ---
+demo/dataset/**/video.mp4
+demo/dataset/**/source_video.mp4
+demo/dataset/**/first_frame.png
+demo/dataset/**/reference.png
+demo/dataset/**/da3/results.npz
+demo/output/
+
+# --- maintainer-only helpers (depend on private data/ runs/ exp/ that aren't shipped):
+#     _build_demo_data.py rebuilds demo/dataset by symlinking into ../data/MBench-Data,
+#     scripts/ verifies the repo against ../runs and ../exp/analysis. Kept locally on
+#     the maintainer's disk; not pushed to the public repo. ---
+demo/_build_demo_data.py
+scripts/

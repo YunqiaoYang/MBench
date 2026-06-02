@@ -1,0 +1,9 @@
+{
+  "sample_id": "mem_openhumanvid_9da45b0dda481df321390b359e1a6023",
+  "subset": "human",
+  "caption": "Two women in elaborate traditional attire stand outdoors against a blurred green backdrop, suggesting a natural or garden setting. The woman in the foreground wears a purple and pink garment with a high collar, long dangling earrings, and an ornate headpiece adorned with yellow ribbons and sparkling jewels. Her expression is serious as she slowly turns her head to the side, eyes briefly closing. The second woman, partially visible, wears a pink scarf and similar accessories, facing away. The lighting is soft and diffused, indicating overcast weather or shaded conditions.",
+  "ground_truth_media": {
+    "source_video": "source_video.mp4",
+    "first_frame": "first_frame.png"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "sample_id": "vobj_sample_068_3f64c617",
+  "subset": "object",
+  "caption_segments": [
+    "A modern building entrance features a door with a metallic frame, frosted glass panel, and silver handle, positioned adjacent to a glass wall as part of a secure access point.",
+    "The camera begins to pan right, moving away from the door while it remains visible in the frame, still showing its metallic frame and frosted glass panel.",
+    "Continuing the pan right, the subject is now fully out of frame and no longer visible, with only the surrounding structural elements in view.",
+    "The camera starts to pan left, returning toward the original area where the door was initially shown.",
+    "As the camera continues panning left, the same door comes back into clear view, displaying its metallic frame, frosted glass panel, and silver handle."
+  ],
+  "object_card": {
+    "object_name": "door",
+    "core_attributes": [
+      "metallic frame",
+      "frosted glass panel",
+      "silver handle"
+    ],
+    "scene_context": [
+      "modern building entrance",
+      "adjacent to glass wall",
+      "part of secure access point"
+    ],
+    "must_keep": [
+      "maintain focus on door",
+      "include surrounding structural elements"
+    ],
+    "must_avoid": [
+      "mentioning color overlays",
+      "describing mask or highlighting"
+    ],
+    "visibility_plan": {
+      "seg1": "clear full view",
+      "seg2": "still visible while camera starts moving away",
+      "seg3": "fully out of frame",
+      "seg4": "camera returns toward the original area",
+      "seg5": "same object clearly visible again"
+    }
+  }
+}
