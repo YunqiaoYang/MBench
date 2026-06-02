@@ -35,6 +35,8 @@
 <a name="overview"></a>
 ## 概览
 
+<img src="./assets/teaser.png" width="100%" alt="Teaser">
+
 MBench 把"长视频记忆能力"这件事形式化为三条正交的能力线：
 
 - **Entity Consistency** —— 主体的身份、外观、几何、纹理在离开画面再出现后是否保持一致？

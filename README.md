@@ -35,6 +35,8 @@ If you run into problems, please open an [issue](https://github.com/study-overfl
 <a name="overview"></a>
 ## Overview
 
+<img src="./assets/teaser.png" width="100%" alt="Teaser">
+
 MBench formalises "long-video memory capability" as three orthogonal capability axes:
 
 - **Entity Consistency** — does a subject's identity, appearance, geometry, and texture stay consistent after it exits the frame and returns?
